@@ -18,6 +18,7 @@ from .fc2video import *
 from .flickr import *
 from .freesound import *
 from .funshion import *
+from .gogoup import *
 from .google import *
 from .heavymusic import *
 from .ifeng import *

@@ -22,6 +22,7 @@ SITES = {
     'flickr'           : 'flickr',
     'freesound'        : 'freesound',
     'fun'              : 'funshion',
+    'gogoup'           : 'gogoup',
     'google'           : 'google',
     'heavy-music'      : 'heavymusic',
     'iask'             : 'sina',
