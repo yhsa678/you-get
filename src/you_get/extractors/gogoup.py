@@ -7,14 +7,15 @@ import random
 import xml.etree.ElementTree as ET
 import base64, hashlib, urllib, time, re
 import requests
-import pyCookieCheat
+# import pyCookieCheat
+import pycookiecheat
 from .letv import letvcloud_download_by_vu
 
 from ..common import *
 
 def gogoup_download(url, output_dir='.', merge=True, info_only=False ,**kwargs):
     if re.match(r'http:\/\/www\.gogoup\.com\/play\?festId=\d+', url):
-        cookies = pyCookieCheat.chrome_cookies(url)
+        cookies = pycookiecheat.chrome_cookies(url)
         sess = requests.Session()
         video_page = str(sess.get(url, cookies = cookies).content)
         # Get uu, vu
